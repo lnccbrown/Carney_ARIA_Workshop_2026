@@ -6,7 +6,8 @@ version = "0.0.0"
 description = "Environment for the HSSM workshop notebooks (recomposed tutorials)"
 requires-python = ">=3.12,<3.15"
 dependencies = [
-    "hssm==0.4.0",
+    "hssm @ git+https://github.com/lnccbrown/HSSM.git@main",
+    "ssm-simulators @ git+https://github.com/lnccbrown/ssm-simulators.git@main",
     "zeus-mcmc>=2.5",
     "jupyterlab>=4.2",
     "ipykernel>=6.29",
