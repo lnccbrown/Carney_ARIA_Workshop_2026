@@ -64,9 +64,6 @@ Expected runtimes (laptop CPU, all cells): notebook 1 ≈ 4 min, notebook 2
   traces (`data/idata/*/traces.nc`), ONNX likelihood networks, and the
   fixtures for the cartoon-plot section
 - `images/` — figures referenced by the notebooks
-- `_build/compose.py` — provenance record: which cells of which upstream
-  [HSSM tutorials](https://lnccbrown.github.io/HSSM/) these notebooks were
-  recomposed from (historical; the notebooks here are the source of truth)
 - `pyproject.toml` / `uv.lock` — pinned environment (hssm v0.4.1 via git tag;
   will switch to the PyPI release once available)
 
