@@ -1,0 +1,30 @@
+# Environment for the Carney ARIA 2026 HSSM workshop notebooks.
+#
+# hssm is pinned to the v0.4.1 git tag because the 0.4.x releases are not on
+# PyPI yet (publish blocked by lnccbrown/HSSM#1061). Once 0.4.1 lands on
+# PyPI, replace the [tool.uv.sources] entry with `hssm==0.4.1` in
+# dependencies.
+[project]
+name = "carney-aria-workshop-2026"
+version = "0.0.0"
+description = "Environment for the HSSM workshop notebooks (recomposed tutorials)"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "hssm",
+    "zeus-mcmc>=2.5",
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+    "matplotlib>=3.8",
+    "arviz>=0.18",
+    "graphviz>=0.20",
+    "pyarrow>=17",
+    "nbconvert>=7.16",
+    "onnxruntime>=1.27.0",
+    "ipywidgets>=8.1",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+hssm = { git = "https://github.com/lnccbrown/HSSM", tag = "v0.4.1" }
