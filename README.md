@@ -12,14 +12,14 @@ tutorial collection.
 
 ## Run on Google Colab (no installation)
 
-Click a badge above. Then, inside the notebook, **uncomment and run the
-"Colab instructions" cell near the top** — it installs HSSM v0.4.1 and
-downloads any data the notebook needs. Notes:
+Click a badge above and run the notebook top to bottom — no edits needed.
+The **setup cell** at the top detects Colab automatically, installs HSSM
+v0.4.1, and fetches whatever data the notebook uses (when run locally it
+does nothing). Notes:
 
-- The install builds HSSM from GitHub and takes ~2–3 minutes.
-- Notebook 2 downloads ~310 MB of pre-sampled traces (one-time per Colab
-  session). Skipping the download also works — the notebook falls back to
-  sampling live, which takes longer.
+- On Colab, the install builds HSSM from GitHub and takes ~2–3 minutes.
+- Notebook 2 additionally fetches ~310 MB of pre-sampled traces (one-time
+  per Colab session).
 - Everything runs on a standard CPU runtime; no GPU needed.
 
 ## Run locally
