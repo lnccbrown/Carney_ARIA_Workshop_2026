@@ -1,7 +1,7 @@
 # Carney ARIA Workshop 2026 — Hierarchical Sequential Sampling Models with HSSM
 
 Hands-on materials for the workshop: three Jupyter notebooks built on
-[HSSM](https://github.com/lnccbrown/HSSM) (v0.4.1), recomposed from the HSSM
+[HSSM](https://github.com/lnccbrown/HSSM) (0.4.0, from PyPI), recomposed from the HSSM
 tutorial collection.
 
 | # | Notebook | Open in Colab | What it covers |
@@ -13,11 +13,10 @@ tutorial collection.
 ## Run on Google Colab (no installation)
 
 Click a badge above and run the notebook top to bottom — no edits needed.
-The **setup cell** at the top detects Colab automatically, installs HSSM
-v0.4.1, and fetches whatever data the notebook uses (when run locally it
+The **setup cell** at the top detects Colab automatically, installs HSSM from PyPI, and fetches whatever data the notebook uses (when run locally it
 does nothing). Notes:
 
-- On Colab, the install builds HSSM from GitHub and takes ~2–3 minutes.
+- On Colab, the install takes a minute or two.
 - Notebook 2 additionally fetches ~310 MB of pre-sampled traces (one-time
   per Colab session).
 - Everything runs on a standard CPU runtime; no GPU needed.
@@ -33,12 +32,12 @@ additionally wants the graphviz system binary (`brew install graphviz` /
 git clone https://github.com/lnccbrown/Carney_ARIA_Workshop_2026.git
 cd Carney_ARIA_Workshop_2026
 
-# 1. Create the environment (installs hssm v0.4.1 and all dependencies)
+# 1. Create the environment (installs hssm and all dependencies)
 uv sync
 
 # 2. Register the Jupyter kernel the notebooks reference
 uv run ipython kernel install --user \
-  --name hssm-workshop --display-name "HSSM Workshop (hssm v0.4.1)"
+  --name hssm-workshop --display-name "HSSM Workshop"
 
 # 3. Open the notebooks
 uv run jupyter lab
@@ -64,8 +63,7 @@ Expected runtimes (laptop CPU, all cells): notebook 1 ≈ 4 min, notebook 2
   traces (`data/idata/*/traces.nc`), ONNX likelihood networks, and the
   fixtures for the cartoon-plot section
 - `images/` — figures referenced by the notebooks
-- `pyproject.toml` / `uv.lock` — pinned environment (hssm v0.4.1 via git tag;
-  will switch to the PyPI release once available)
+- `pyproject.toml` / `uv.lock` — pinned environment (hssm from PyPI)
 
 ## Getting help
 

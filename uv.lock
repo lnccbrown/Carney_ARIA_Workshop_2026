@@ -288,7 +288,7 @@ dependencies = [
 requires-dist = [
     { name = "arviz", specifier = ">=0.18" },
     { name = "graphviz", specifier = ">=0.20" },
-    { name = "hssm", git = "https://github.com/lnccbrown/HSSM?tag=v0.4.1" },
+    { name = "hssm", specifier = "==0.4.0" },
     { name = "ipykernel", specifier = ">=6.29" },
     { name = "ipywidgets", specifier = ">=8.1" },
     { name = "jupyterlab", specifier = ">=4.2" },
@@ -867,8 +867,8 @@ wheels = [
 
 [[package]]
 name = "hssm"
-version = "0.4.1"
-source = { git = "https://github.com/lnccbrown/HSSM?tag=v0.4.1#e49b89bb4a20e65899972d3f71e5f75c49a82811" }
+version = "0.4.0"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "absl-py" },
     { name = "bambi" },
@@ -880,6 +880,10 @@ dependencies = [
     { name = "numpyro" },
     { name = "onnx" },
     { name = "ssm-simulators" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/97/05/5ae6412d869437aab875cc1b42a06f9e8be0557e061e0e0fca0e0200d1d3/hssm-0.4.0.tar.gz", hash = "sha256:d8ff7d4bfe91691a6666d09bc480ff7bd4c4fa786ff5eb4bb00c4e6d3d23667d", size = 296695, upload-time = "2026-07-15T17:42:55.807Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/08/5b/4ba0b8311ad3fe9309d4d714344076be7318e59c3bbc83b3de65095079d1/hssm-0.4.0-py3-none-any.whl", hash = "sha256:de560429625b20b862f7d39bbdc6daea9987de8ad73be5a36586414249a72d4b", size = 338666, upload-time = "2026-07-15T17:42:54.638Z" },
 ]
 
 [[package]]
