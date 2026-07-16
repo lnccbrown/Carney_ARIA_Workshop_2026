@@ -2,9 +2,10 @@
 
 Hands-on materials for the workshop: Jupyter notebooks built on
 [HSSM](https://github.com/lnccbrown/HSSM), recomposed from the HSSM tutorial
-collection. The notebooks use current `main` for both HSSM and
-[`ssm-simulators`](https://github.com/lnccbrown/ssm-simulators) so the latest
-`ssms.rl` presets and bridge APIs are available.
+collection. Notebooks 1–3 run on **hssm 0.4.0 from PyPI**; the RLSSM notebooks
+(4–6) use current `main` for HSSM and
+[`ssm-simulators`](https://github.com/lnccbrown/ssm-simulators), because the
+`RLSSMConfig` bridge APIs are not in a PyPI release yet.
 
 | # | Notebook | Open in Colab | What it covers |
 |---|----------|---------------|----------------|
@@ -27,8 +28,8 @@ nothing). Notes:
 - On Colab, the install takes a minute or two.
 - Notebook 2 additionally fetches ~310 MB of pre-sampled traces (one-time
   per Colab session).
-- The notebooks install HSSM and ssm-simulators from GitHub `main` so the local
-  and Colab environments match.
+- Notebooks 1–3 install `hssm==0.4.0` from PyPI; notebooks 4–6 install HSSM and
+  ssm-simulators from GitHub `main` (needed for the RLSSM bridge APIs).
 - Everything runs on a standard CPU runtime; no GPU needed.
 
 ## Run locally
