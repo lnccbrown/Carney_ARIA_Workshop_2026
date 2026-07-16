@@ -29,11 +29,6 @@ nothing). Notes:
 - On Colab, the install takes a minute or two.
 - Notebook 2 additionally fetches ~310 MB of pre-sampled traces (one-time
   per Colab session).
-- Notebooks 1–3 install `hssm==0.4.0` from PyPI; notebooks 4–6 install HSSM
-  from GitHub `main` with
-  `pip install git+https://github.com/lnccbrown/HSSM.git@main`. That HSSM
-  install resolves the released `ssm-simulators` wheel from PyPI instead of
-  building ssms from source.
 - Everything runs on a standard CPU runtime; no GPU needed.
 
 ## Run locally
