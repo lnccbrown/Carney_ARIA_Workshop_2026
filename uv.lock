@@ -281,7 +281,6 @@ dependencies = [
     { name = "nbconvert" },
     { name = "onnxruntime" },
     { name = "pyarrow" },
-    { name = "ssm-simulators" },
     { name = "zeus-mcmc" },
 ]
 
@@ -297,7 +296,6 @@ requires-dist = [
     { name = "nbconvert", specifier = ">=7.16" },
     { name = "onnxruntime", specifier = ">=1.27.0" },
     { name = "pyarrow", specifier = ">=17" },
-    { name = "ssm-simulators", specifier = ">=0.13.2" },
     { name = "zeus-mcmc", specifier = ">=2.5" },
 ]
 

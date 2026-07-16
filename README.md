@@ -4,9 +4,9 @@ Hands-on materials for the workshop: Jupyter notebooks built on
 [HSSM](https://github.com/lnccbrown/HSSM), recomposed from the HSSM tutorial
 collection. Notebooks 1–3 run on **hssm 0.4.0 from PyPI**; the RLSSM notebooks
 (4–6) use current `main` for HSSM and
-[`ssm-simulators`](https://github.com/lnccbrown/ssm-simulators) from PyPI
-`>=0.13.2`, because the `RLSSMConfig` bridge APIs are not in an HSSM PyPI
-release yet.
+[`ssm-simulators`](https://github.com/lnccbrown/ssm-simulators) through HSSM's
+dependency requirements, because the `RLSSMConfig` bridge APIs are not in an
+HSSM PyPI release yet.
 
 | # | Notebook | Open in Colab | What it covers |
 |---|----------|---------------|----------------|
@@ -30,8 +30,10 @@ nothing). Notes:
 - Notebook 2 additionally fetches ~310 MB of pre-sampled traces (one-time
   per Colab session).
 - Notebooks 1–3 install `hssm==0.4.0` from PyPI; notebooks 4–6 install HSSM
-  from GitHub `main` and `ssm-simulators>=0.13.2` from PyPI, so Colab can use
-  the released ssms wheel instead of building ssms from source.
+  from GitHub `main` with
+  `pip install git+https://github.com/lnccbrown/HSSM.git@main`. That HSSM
+  install resolves the released `ssm-simulators` wheel from PyPI instead of
+  building ssms from source.
 - Everything runs on a standard CPU runtime; no GPU needed.
 
 ## Run locally
@@ -45,7 +47,7 @@ additionally wants the graphviz system binary (`brew install graphviz` /
 git clone https://github.com/lnccbrown/Carney_ARIA_Workshop_2026.git
 cd Carney_ARIA_Workshop_2026
 
-# 1. Create the environment (HSSM from main; ssm-simulators from PyPI >=0.13.2)
+# 1. Create the environment (HSSM from main; ssms resolves from HSSM deps)
 uv sync
 
 # 2. Register the Jupyter kernel the notebooks reference
@@ -80,7 +82,8 @@ outputs.
   fixtures for the cartoon-plot section
 - `images/` — figures referenced by the notebooks
 - `pyproject.toml` / `uv.lock` — workshop environment; HSSM is sourced from
-  GitHub `main`, while `ssm-simulators>=0.13.2` is sourced from PyPI
+  GitHub `main`, and `ssm-simulators` resolves through HSSM's dependency
+  requirements
 
 ## Getting help
 
