@@ -297,7 +297,7 @@ requires-dist = [
     { name = "nbconvert", specifier = ">=7.16" },
     { name = "onnxruntime", specifier = ">=1.27.0" },
     { name = "pyarrow", specifier = ">=17" },
-    { name = "ssm-simulators", git = "https://github.com/lnccbrown/ssm-simulators.git?rev=main" },
+    { name = "ssm-simulators", specifier = ">=0.13.2" },
     { name = "zeus-mcmc", specifier = ">=2.5" },
 ]
 
@@ -2842,8 +2842,8 @@ wheels = [
 
 [[package]]
 name = "ssm-simulators"
-version = "0.13.1"
-source = { git = "https://github.com/lnccbrown/ssm-simulators.git?rev=main#d6b2ad9fbd8bf165f52f66d0cfd5c692305e6663" }
+version = "0.13.2"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cloudpickle" },
     { name = "matplotlib" },
@@ -2856,6 +2856,30 @@ dependencies = [
     { name = "scipy" },
     { name = "tqdm" },
     { name = "typer" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/56/31/57dce66f75af66d19da1e116a9ea641d801594b14a0ebcc86322ec780d54/ssm_simulators-0.13.2.tar.gz", hash = "sha256:194732decaf0c15ee6c499ffc527705f417deae4fb610151a7f1211be8f56f8d", size = 2668988, upload-time = "2026-07-16T01:50:24.025Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/45/79/54bd654dac5883a8d0294de47ca95c7287400680072f79e25ae32f9f8fe4/ssm_simulators-0.13.2-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:29be67bdea78f88635a4053ea35995f39465a88c4de0b217640632468355f172", size = 4156770, upload-time = "2026-07-16T01:49:47.629Z" },
+    { url = "https://files.pythonhosted.org/packages/c6/eb/c45cd16b7282bd891f78318da4a92328bd59623a1443e88e5ae122b4f6f9/ssm_simulators-0.13.2-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:83e6050fc0971d4fe4ce38abaa0e20c3e98e5f9c2cd69d4675fa0a249895b9da", size = 4098268, upload-time = "2026-07-16T01:49:49.33Z" },
+    { url = "https://files.pythonhosted.org/packages/4a/54/8a4522e137164a32fd14296b2f23ee27414f23edebf84d39d05983a3f761/ssm_simulators-0.13.2-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:871c6c8119f152e448585b4f2a27b9ae62d9927bf3bf7f34a644f2ca1416a974", size = 12430977, upload-time = "2026-07-16T01:49:50.661Z" },
+    { url = "https://files.pythonhosted.org/packages/f0/50/685178d8632b6fd46b5445544e4ff1ed0a336f61a707a374bcf70c9c2c71/ssm_simulators-0.13.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:572a9158e54cd75719cc5c9df9ef723060146f5a9197f63b8f93899d36b99d36", size = 12797156, upload-time = "2026-07-16T01:49:52.629Z" },
+    { url = "https://files.pythonhosted.org/packages/57/7d/843d6bdcb934624a5cb83a6522e05143a4fe76d291f551c213a42945076f/ssm_simulators-0.13.2-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:ae573a0c0dd45a297e5bb6f48002bf95f377cbb16f26a6b0fe7d9ba155efa123", size = 12327210, upload-time = "2026-07-16T01:49:54.965Z" },
+    { url = "https://files.pythonhosted.org/packages/e8/04/fc72526762b80a6f724095f794ea09ae6c0acc13c4b36f5216e61f8443e0/ssm_simulators-0.13.2-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:93473a492db2518f106d354c96621c20889c8d7ffb30797a64a152aead580ef4", size = 12796341, upload-time = "2026-07-16T01:49:56.849Z" },
+    { url = "https://files.pythonhosted.org/packages/3a/ce/88756678ef6e1023c17942e0a3899d5d3fb33b8afa32c1f14e9a3f32886a/ssm_simulators-0.13.2-cp312-cp312-win_amd64.whl", hash = "sha256:426f1744b5c7a9792d10ebd4131760690dedc46acbffde0ddd734d696b01bf3a", size = 3995675, upload-time = "2026-07-16T01:49:58.795Z" },
+    { url = "https://files.pythonhosted.org/packages/75/6a/bf871758c6b3fdc6b9796da980aeaf5c19d029c899042f4a163feb783b47/ssm_simulators-0.13.2-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:8bc6839b7c202474f30c926ee72248a464f0b7d0e49c0f5a12276905a1ca73ae", size = 4149407, upload-time = "2026-07-16T01:50:00.013Z" },
+    { url = "https://files.pythonhosted.org/packages/d0/81/6c77792aadd4d578117756f2fb98bec1488d2ef18eaa1c98aae2529c19e0/ssm_simulators-0.13.2-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:a0550c5edb1654b4843f67566777f7e62177e707b41fd3fef28dac8032e0ae45", size = 4091100, upload-time = "2026-07-16T01:50:01.517Z" },
+    { url = "https://files.pythonhosted.org/packages/b6/38/e87d3f0c87745d9c21291c629504e083f6f348a8470d5c86599ee0a8529a/ssm_simulators-0.13.2-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:8f5a04c9745377fd4a72cdd4443851fe675895e69da38545ee4886cd511de3e6", size = 12397350, upload-time = "2026-07-16T01:50:03.052Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/4d/f1966b78cda8d6b8ee9377789d835d2b763a9cfb332405becfe41508ca62/ssm_simulators-0.13.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:00d0ccfa0e1b39312360562cede936d9e67c62584a220dbda0d9f9fc3345a28f", size = 12791111, upload-time = "2026-07-16T01:50:04.786Z" },
+    { url = "https://files.pythonhosted.org/packages/26/46/931a2b3d3ead7244c6e8d53b11439cef5854f3104d976eb7362c662d086f/ssm_simulators-0.13.2-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:91ad136022aea36f6d5da7dde4252de0ae2a5076c78224976dc415f99deb5445", size = 12252909, upload-time = "2026-07-16T01:50:06.794Z" },
+    { url = "https://files.pythonhosted.org/packages/76/a0/c55a009e7001b3230619070b1f986cd23e5f2efb31d8f345e51f7b710341/ssm_simulators-0.13.2-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:3f3d98970656f4674736868b9b600bf93b246b27a4e863e96cbe90f2dd71d2ad", size = 12756073, upload-time = "2026-07-16T01:50:08.928Z" },
+    { url = "https://files.pythonhosted.org/packages/4c/7f/8cfcff41594ad671aeea0862a8853af05111bd6aa115a4e0c3f591a2dfe6/ssm_simulators-0.13.2-cp313-cp313-win_amd64.whl", hash = "sha256:a6e0651a27d49b0b941ead723c921477540c7c86225c7b6c459e571f684fb59f", size = 3993851, upload-time = "2026-07-16T01:50:10.903Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/36/ffdcaba3711f8d9553d4b2254958b49c77524ba98c00b739038e8b25f232/ssm_simulators-0.13.2-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:4b0f4db3e3a91fac3568022c3dbfc15876a7529f6a9ecab9d3c008faf23560a4", size = 4202188, upload-time = "2026-07-16T01:50:12.387Z" },
+    { url = "https://files.pythonhosted.org/packages/8b/79/f6ed8c14f070510ccf2b8fe627614b147e8b9de8fab44c97d3b7afaacbd5/ssm_simulators-0.13.2-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:235c48d7369692413a4429cc1a1af0a90f14a93e0a97c3422f7177272aa75360", size = 4150496, upload-time = "2026-07-16T01:50:13.802Z" },
+    { url = "https://files.pythonhosted.org/packages/27/55/5cae6e568a92c5e71815bb1272d33eca27ba2c851500832a50a8cc2c0c47/ssm_simulators-0.13.2-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:e0ad32470a35412110772e6009bd57ef4eb54fda3fb275f184d9546053c378ec", size = 12366278, upload-time = "2026-07-16T01:50:15.159Z" },
+    { url = "https://files.pythonhosted.org/packages/df/43/849dc4b671ad237dbeebd4e0fdf99ef8fca3451c07fb35f06d2a69d84833/ssm_simulators-0.13.2-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:e4689f5f79e93dea51feb725df3b3c07f7d4a5dba36305925a6b5280a15a6d53", size = 12743262, upload-time = "2026-07-16T01:50:17.005Z" },
+    { url = "https://files.pythonhosted.org/packages/39/2d/c8224c0009c7d0797868a8a87fbb42842bb4c6f7b87ad725632268f356e5/ssm_simulators-0.13.2-cp314-cp314-musllinux_1_2_aarch64.whl", hash = "sha256:afcbc188d07626319aba9e284a0292b03def63d7b19ac95274bf702202271478", size = 12242999, upload-time = "2026-07-16T01:50:18.986Z" },
+    { url = "https://files.pythonhosted.org/packages/26/89/065cf0b6fa631148f03f5e7ab9c0e196c3642cc7dcca3b84d04e99606c31/ssm_simulators-0.13.2-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:9f72efd2dda45ccd3b45c472a2680c07bd37d4ef7525712e5f013c9e235f6d35", size = 12717399, upload-time = "2026-07-16T01:50:20.784Z" },
+    { url = "https://files.pythonhosted.org/packages/31/20/4340496d8c72596a3e9df6f125ed57774cdc55a188389ff433fdaaba4882/ssm_simulators-0.13.2-cp314-cp314-win_amd64.whl", hash = "sha256:52c533f774394cbc2072fc8ccafadeb289bbf9f2b1f91bbb929dc9862cbf149e", size = 4056257, upload-time = "2026-07-16T01:50:22.749Z" },
 ]
 
 [[package]]

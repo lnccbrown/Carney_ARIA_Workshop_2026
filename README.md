@@ -4,8 +4,9 @@ Hands-on materials for the workshop: Jupyter notebooks built on
 [HSSM](https://github.com/lnccbrown/HSSM), recomposed from the HSSM tutorial
 collection. Notebooks 1–3 run on **hssm 0.4.0 from PyPI**; the RLSSM notebooks
 (4–6) use current `main` for HSSM and
-[`ssm-simulators`](https://github.com/lnccbrown/ssm-simulators), because the
-`RLSSMConfig` bridge APIs are not in a PyPI release yet.
+[`ssm-simulators`](https://github.com/lnccbrown/ssm-simulators) from PyPI
+`>=0.13.2`, because the `RLSSMConfig` bridge APIs are not in an HSSM PyPI
+release yet.
 
 | # | Notebook | Open in Colab | What it covers |
 |---|----------|---------------|----------------|
@@ -28,8 +29,9 @@ nothing). Notes:
 - On Colab, the install takes a minute or two.
 - Notebook 2 additionally fetches ~310 MB of pre-sampled traces (one-time
   per Colab session).
-- Notebooks 1–3 install `hssm==0.4.0` from PyPI; notebooks 4–6 install HSSM and
-  ssm-simulators from GitHub `main` (needed for the RLSSM bridge APIs).
+- Notebooks 1–3 install `hssm==0.4.0` from PyPI; notebooks 4–6 install HSSM
+  from GitHub `main` and `ssm-simulators>=0.13.2` from PyPI, so Colab can use
+  the released ssms wheel instead of building ssms from source.
 - Everything runs on a standard CPU runtime; no GPU needed.
 
 ## Run locally
@@ -43,7 +45,7 @@ additionally wants the graphviz system binary (`brew install graphviz` /
 git clone https://github.com/lnccbrown/Carney_ARIA_Workshop_2026.git
 cd Carney_ARIA_Workshop_2026
 
-# 1. Create the environment (installs HSSM and ssm-simulators from main)
+# 1. Create the environment (HSSM from main; ssm-simulators from PyPI >=0.13.2)
 uv sync
 
 # 2. Register the Jupyter kernel the notebooks reference
@@ -77,8 +79,8 @@ outputs.
   traces (`data/idata/*/traces.nc`), ONNX likelihood networks, and the
   fixtures for the cartoon-plot section
 - `images/` — figures referenced by the notebooks
-- `pyproject.toml` / `uv.lock` — workshop environment; HSSM and
-  ssm-simulators are sourced from GitHub `main`
+- `pyproject.toml` / `uv.lock` — workshop environment; HSSM is sourced from
+  GitHub `main`, while `ssm-simulators>=0.13.2` is sourced from PyPI
 
 ## Getting help
 
