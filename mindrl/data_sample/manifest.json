@@ -7,6 +7,29 @@
   "n_subjects": 25,
   "n_trials_per_trajectory": 120,
   "reward_scale": 100.0,
+  "rt_source_units": "milliseconds",
+  "rt_output_units": "seconds",
+  "rt_valid_window_ms": {
+    "lower": 100.0,
+    "lower_inclusive": false,
+    "upper": 3000.0,
+    "upper_inclusive": true
+  },
+  "invalid_rt_placeholder_seconds": 1.0,
+  "rt_mask_counts": {
+    "train": {
+      "included": 7022,
+      "missing": 382,
+      "below_100_ms": 1578,
+      "above_3000_ms": 18
+    },
+    "heldout": {
+      "included": 2321,
+      "missing": 128,
+      "below_100_ms": 548,
+      "above_3000_ms": 3
+    }
+  },
   "eligibility": {
     "task_id": "public_4arm_restless_bandit",
     "num_options": 4,
