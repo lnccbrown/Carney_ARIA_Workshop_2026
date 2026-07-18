@@ -1,0 +1,59 @@
+{
+  "sources": {
+    "trials": "hf_cache/public/public_train.jsonl",
+    "reward_schedules": "hf_cache/public/public_train_reward_schedules.jsonl"
+  },
+  "seed": 20260707,
+  "n_subjects": 25,
+  "n_trials_per_trajectory": 120,
+  "reward_scale": 100.0,
+  "eligibility": {
+    "task_id": "public_4arm_restless_bandit",
+    "num_options": 4,
+    "available_actions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "n_trials": 120,
+    "trajectories_per_subject": 4
+  },
+  "split_policy": "3 train + 1 held-out trajectory per subject",
+  "selected_subjects": [
+    "sub_000010",
+    "sub_000043",
+    "sub_000202",
+    "sub_000223",
+    "sub_000263",
+    "sub_000264",
+    "sub_000278",
+    "sub_000284",
+    "sub_000311",
+    "sub_000382",
+    "sub_000390",
+    "sub_000475",
+    "sub_000523",
+    "sub_000572",
+    "sub_000646",
+    "sub_000675",
+    "sub_000685",
+    "sub_000696",
+    "sub_000702",
+    "sub_000709",
+    "sub_000719",
+    "sub_000730",
+    "sub_000791",
+    "sub_000807",
+    "sub_000850"
+  ],
+  "n_train_rows": 9000,
+  "n_heldout_rows": 3000,
+  "n_reward_schedule_rows": 48000,
+  "files": {
+    "train_trials": "train_trials.csv",
+    "heldout_trials": "heldout_trials.csv",
+    "reward_schedules": "reward_schedules.csv",
+    "splits": "splits.json"
+  }
+}
